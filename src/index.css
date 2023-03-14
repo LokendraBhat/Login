@@ -1,0 +1,114 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+section{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ width: 100%;
+ background: url(m1.jpg)no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+.login-sec{
+  position: relative;
+  height: 450px;
+  width:400px;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border-radius: 25px;
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-size: 2em;
+  color:white;
+  text-align: center;
+}
+
+.input-sec{
+  position: relative;
+  margin: 35px 0;
+  width: 310px;
+  border-bottom: 2px solid #fff;
+  
+}
+.input-sec label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #fff;
+  transform: translateY(-50%);
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+input:focus ~label,
+input:valid ~label{
+  top: -5px;
+
+}
+.input-sec input {
+  width:100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline:none;
+  font-size: 1.2em;
+  color: white;
+  padding: 0 35px 0 5px;
+}
+
+.forget-sec{
+  margin: -15px 0 15px;
+  font-size: .9em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+} 
+.forget-sec label input{
+  margin-right: 5px;
+}
+.forget-sec label a,
+.register-sec p a
+{
+  margin-left: 5px;
+  color: rgba(0, 0, 255, 0.838);
+  text-decoration: none;
+  font-weight: 600;
+}
+.forget-sec label a:hover,
+.register-sec p a:hover{
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+}
+button{
+  width: 100%;
+  height: 40px;
+  border-radius: 35px;
+  background: #fff;
+  border:none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bolder;
+}
+button:hover{
+  background: rgba(255, 255, 255, 0.5);
+}
+button:focus{
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5)
+}
+.register-sec{
+  font-size: .9em;
+  text-align: center;
+  color: #fff;
+  margin: 25px 0 10px;
+}
